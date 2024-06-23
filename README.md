@@ -19,3 +19,13 @@ Use the "C" button to clear the entire display and the "DEL" button to remove th
 # Feel free to:
 Fork this repository and experiment with adding more functionalities like advanced mathematical operations, memory functions, etc.
 Explore different CSS styles to create a unique visual design for the calculator.
+
+# Contact
+
+For any questions or inquiries, please reach out to:
+
+Your Name: [Avinash Kumar]
+
+Project Link: [GitHub Repository](https://github.com/AvinashS97/strangers-Vcall)
+Happy Coding... 👍
+
