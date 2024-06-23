@@ -15,4 +15,62 @@ body{
     height: 500px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    background: #22252D;
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background: #000;
+    text-align: right;  /* text from right side */
+    pointer-events: none; /* disable the input  */
+}
+
+/* .screen{
+    size: 400px;
+    margin: 2% 2%;
+} */
+
+button{
+    flex: 0 0 22%;
+    margin: 3px 0;
+    width: 60px;
+    height: 52px;
+    border: 1px solid  #000;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.btn-yellow{
+    background: rgb(245, 146, 62);
+    color: #fff;
+}
+
+.btn-grey{
+    background: rgb(224, 224, 244);
+    
+}
+.btn-clear{
+    background: rgb(255, 0, 0);
+    
+}
+.btn-equal{
+    background: rgb(0, 128, 0);
 }
