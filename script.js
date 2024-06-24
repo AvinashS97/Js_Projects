@@ -1,4 +1,5 @@
 (function(){
+    
     let screen = document.querySelector('.screen');
     let buttons = document.querySelectorAll('.btn');
     let clear = document.querySelector('.btn-clear');
@@ -15,18 +16,11 @@
         if(screen.value === ''){
             screen.value = "";
         } else {
-            let answer = eval(string(screen.value));
-
-            // console.log(eval(screen.value));
-            screen.value = answer.toString() ;
-            // console.log(answer);
-
-            let string = eval(screen.value);
-            screen.value= string;
-            screen.value= answer;
-        }
+                answer = eval(screen.value);
+                screen.value = answer;   
+        }  
     })
-    
+
 
     clear.addEventListener('click', function(e){
         screen.value = "";
