@@ -13,11 +13,22 @@
 
     equal.addEventListener('click', function(e){
         if(screen.value === ''){
-            screen.value = "Enter number ";
+            screen.value = "";
         } else {
-            let answer = eval(screen.value);
-            screen.value = answer ;
+            let answer = eval(string(screen.value));
+
+            // console.log(eval(screen.value));
+            screen.value = answer.toString() ;
+            // console.log(answer);
+
+            let string = eval(screen.value);
+            screen.value= string;
+            screen.value= answer;
         }
     })
+    
 
+    clear.addEventListener('click', function(e){
+        screen.value = "";
+    })
 })();
