@@ -1,8 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     background: #a5a5a5;
     display: flex;
@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 
-.calculator{
+.calculator {
     width: 300px;
     height: 500px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
@@ -28,8 +28,10 @@ form input {
     padding: 1rem;
     color: #fff;
     background: #000;
-    text-align: right;  /* text from right side */
-    pointer-events: none; /* disable the input  */
+    text-align: right;
+    /* text from right side */
+    pointer-events: none;
+    /* disable the input  */
 }
 
 /* .screen{
@@ -37,40 +39,42 @@ form input {
     margin: 2% 2%;
 } */
 
-button{
+button {
     flex: 0 0 22%;
     margin: 3px 0;
     width: 60px;
     height: 52px;
-    border: 1px solid  #000;
+    border: 1px solid #000;
     font-size: 22px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-between;
     padding: 20px;
-    
+
 }
 
-.btn-yellow{
+.btn-yellow {
     background: rgb(245, 146, 62);
     color: #fff;
 }
 
-.btn-grey{
+.btn-grey {
     background: rgb(224, 224, 244);
-    
+
 }
-.btn-clear{
+
+.btn-clear {
     background: rgb(255, 0, 0);
-    
+
 }
-.btn-equal{
+
+.btn-equal {
     background: rgb(0, 128, 0);
 }
