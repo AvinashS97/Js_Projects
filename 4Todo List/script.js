@@ -2,10 +2,10 @@ const item = document.querySelector("#item")
 const toDoBox = document.querySelector("#to-do-box")
 
 item.addEventListener(
-    "keyup",
+    "keyup", // whenever user start typing
     function (event) {
-        if (event.key == "Enter") {
-            addToDo(this.value)
+        if (event.key == "Enter") { // and press Enter
+            addToDo(this.value) // add to aDDToDo
             this.value = ""
         }
     }
@@ -19,15 +19,15 @@ const addToDo = (item) => {
     `;
 
     listItem.addEventListener(
-        "click",
+        "click", 
         function () {
-            this.classList.toggle("done");
+            this.classList.toggle("done"); //this will add or mark done
         }
     )
     listItem.querySelector("i").addEventListener(
         "click",
         function () {
-            listItem.remove()
+            listItem.remove() // Remove the ToDo
         }
     )
     toDoBox.appendChild(listItem)
