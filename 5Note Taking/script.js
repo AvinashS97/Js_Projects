@@ -5,7 +5,7 @@ const main = document.querySelector("#main");
 // To save the Notes
 const saveNotes = () => {
     const notes = document.querySelectorAll(".note textarea");
-    console.log(notes);
+    // console.log(notes);
     const data = [];
     notes.forEach((note) => {
         data.push(note.value)
@@ -18,6 +18,7 @@ const saveNotes = () => {
     }
 }
 
+// addNote function
 
 const addNote = (text = "") => {
     const note = document.createElement("div");
@@ -31,12 +32,16 @@ const addNote = (text = "") => {
     `
     note.querySelector(".trash").addEventListener("click", function () {
         note.remove();
+        saveNotes()
     })
 
     note.querySelector(".save").addEventListener("click", function () {
         saveNotes();
     })
-    note.querySelector("textarea").addEventListener("click", function () { saveNotes() })
+    note.querySelector("textarea").addEventListener("focusout", function () {
+        saveNotes()
+    })
+
     main.appendChild(note);
     saveNotes();
 }
@@ -53,21 +58,17 @@ const addNote = (text = "") => {
 */
 
 //! Self- calling fns
+
 (
     function () {
         const lsNotes = JSON.parse(localStorage.getItem("notes"));
         // console.log(lsNotes);
         if (lsNotes == null) {
-            addNote();
+            addNote()
         } else {
             lsNotes.forEach((lsNote) => {
                 addNote(lsNote)
             })
-        }
-        if (lsNotes.length == 0) {
-            localStorage.removeItem("notes")
-        } else {
-            addNote()
         }
     }
 )()
