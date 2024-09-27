@@ -9,12 +9,12 @@ const clock = () => {
     const now = new Date() // Current date
     const diff = (end - now) / 1000; // In Seconds
 
-    if(diff < 0)
+    if (diff < 0)
         return;
 
     inputs[0].value = (Math.floor(diff / 3600 / 24)); // convert into days
-    inputs[1].value = (Math.floor((diff /3600) % 24)); // calculate hours
-    inputs[2].value = (Math.floor((diff /60) % 60)); // calculate Minutes
+    inputs[1].value = (Math.floor((diff / 3600) % 24)); // calculate hours
+    inputs[2].value = (Math.floor((diff / 60) % 60)); // calculate Minutes
     inputs[3].value = (Math.floor(diff % 60)); // calculates Seconds
 }
 clock(); //initial call

@@ -19,7 +19,7 @@ const addToDo = (item) => {
     `;
 
     listItem.addEventListener(
-        "click", 
+        "click",
         function () {
             this.classList.toggle("done"); //this will add or mark done
         }
