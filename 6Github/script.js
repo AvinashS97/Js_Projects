@@ -32,7 +32,7 @@ const getUser = async (username) => {
     getRepo(username);
 }
 
-// getUser("codewithharry");
+getUser("AvinashS97");
 
 
 
@@ -55,7 +55,7 @@ const formSubmit = () => {
         getUser(searchbox.value);
         searchbox.value = "";
     }
-    return false;  // It prevent refres
+    return false;  // It prevent refresh
 }
 
 searchbox.addEventListener("focusout", function () {
