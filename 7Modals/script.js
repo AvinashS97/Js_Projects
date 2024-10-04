@@ -3,17 +3,17 @@ const modal = document.querySelector(".modal")
 const openModalButton = document.querySelector(".openModalButton")
 const closeButton = document.querySelector(".close_button")
 
-const openModal = () =>{
+const openModal = () => {
     modal.classList.remove("close");
 }
 
-const closeModal = () =>{
+const closeModal = () => {
     modal.classList.add("close");
 }
-openModalButton.addEventListener("click", ()=>{
+openModalButton.addEventListener("click", () => {
     openModal();
 })
 
-closeButton.addEventListener("click",()=>{
+closeButton.addEventListener("click", () => {
     closeModal();
 })
