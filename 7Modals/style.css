@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; 
+    font-family: sans-serif;
+}
+
+.main {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.openModalButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(43, 74, 86);
+    color: white;
+    cursor: pointer;
+    border-radius: 05rem;
+    font-size: 1.2rem;
+
+}
