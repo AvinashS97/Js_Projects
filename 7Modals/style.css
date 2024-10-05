@@ -71,3 +71,7 @@ body {
 .close {
     display: none;
 }
+
+.overflowHidden {
+    overflow: hidden;
+}
