@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -15,9 +16,14 @@ main {
 }
 
 .row {
+    display: flex;
+    justify-content: center; /*Verrtical center*/
+    align-items: center; /*Horizental center*/
     width: 1000px;
-    height: 100px;
-    border: 1px red solid;
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    /* border: 1px red solid; */
 }
 
 #search {
