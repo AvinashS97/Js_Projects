@@ -18,7 +18,7 @@ This is my JavaScript Projects repo where I do javaScript projects for practice.
 
 For any questions or inquiries, please reach out to:
 
-Your Name: [Avinash Kumar]
+Your Name: [Avinash Kumar](https://www.linkedin.com/in/avinash-kumar-481a7b201/)
 
-Project Link: [GitHub Repository] (https://github.com/AvinashS97/Js_Projects) 
+Project Link: [GitHub Repository](https://github.com/AvinashS97/Js_Projects) 
 Happy Coding...👍
