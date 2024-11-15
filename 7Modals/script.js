@@ -5,21 +5,18 @@ const closeButton = document.querySelector(".close_button")
 const overlay = document.querySelector(".overlay")
 
 //** Open Modal Function */
-
 const openModal = () => {
     modal.classList.remove("close");
     document.body.classList.add("overflowHidden");
 }
 
 //** Close Modal Function */
-
 const closeModal = () => {
     modal.classList.add("close");
     document.body.classList.remove("overflowHidden");
 }
 
 //** Open Modal Button */
-
 openModalButton.addEventListener("click", () => {
     openModal();
 })
