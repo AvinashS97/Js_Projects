@@ -6,6 +6,12 @@ HTML: Provides the structure and content of the calculator interface.
 CSS: Styles the calculator for visual appeal and user-friendliness.
 JavaScript: Handles user interactions and performs mathematical calculations.
 
+# Links:-
+* [Html](https://www.w3schools.com/html/)
+* [CSS](https://www.w3schools.com/css/)
+* [JavaScrpit](https://www.w3schools.com/js/)
+* Mozilla Developer Network (MDN) JavaScript [Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 # Project Overview
 This is a basic calculator that allows users to perform fundamental arithmetic operations like addition, subtraction, multiplication, and division. It features an intuitive interface with buttons for numbers, operators, and clear functions.
 
@@ -27,5 +33,6 @@ For any questions or inquiries, please reach out to:
 Your Name: [Avinash Kumar]
 
 Project Link: [GitHub Repository](https://github.com/AvinashS97/Calculator)
+
 Happy Coding...👍
 
