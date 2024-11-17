@@ -1,112 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- <p>Calculator</p> -->
-    <!-- <section class="calculator">
-        <form>
-            <input type="text" class="screen">
-        </form>
-        <div class="buttons"> -->
-            <!-- Operators -->
-            <!-- <button type="button" class="btn btn-yellow" data-num="*">*</button>
-            <button type="button" class="btn btn-yellow" data-num="/">/</button>
-            <button type="button" class="btn btn-yellow" data-num="-">-</button>
-            <button type="button" class="btn btn-yellow" data-num="+">+</button> -->
-
-            <!-- Numbers -->
-            <!-- <button type="button" class="btn btn-grey" data-num="9">9</button>
-            <button type="button" class="btn btn-grey" data-num="8">8</button>
-            <button type="button" class="btn btn-grey" data-num="7">7</button>
-            <button type="button" class="btn btn-grey" data-num="6">6</button>
-            <button type="button" class="btn btn-grey" data-num="5">5</button>
-            <button type="button" class="btn btn-grey" data-num="4">4</button>
-            <button type="button" class="btn btn-grey" data-num="3">3</button>
-            <button type="button" class="btn btn-grey" data-num="2">2</button>
-            <button type="button" class="btn btn-grey" data-num="1">1</button>
-            <button type="button" class="btn btn-grey" data-num="0">0</button>
-            <button type="button" class="btn btn-grey" data-num=".">.</button> -->
-
-            <!-- Assignment Keys -->
-            <!-- <button type="button" class="btn btn-equal">=</button>
-            <button type="button" class="btn btn-clear">C</button> -->
-        <!-- </div> -->
-    <!-- </section> -->
-
-    <div class="calculator">
-        <input type="text" placeholder="0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator - By Code Traversal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
         <div>
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
+          <button class="button operator">AC</button>
+          <button class="button operator">DEL</button>
+          <button class="button operator">%</button>
+          <button class="button operator">/</button>
         </div>
         <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button operator">*</button>
         </div>
         <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button operator">-</button>
         </div>
         <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-        </div>
-        <div>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button operator">+</button>
         </div>
 
+        <div>
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button equalBtn">=</button>
+        </div>
+      </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

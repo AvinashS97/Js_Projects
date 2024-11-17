@@ -1,35 +1,26 @@
-(function () {
+let input = document.getElementById('inputBox');
+let buttons = document.querySelectorAll('button');
 
-    let screen = document.querySelector('.screen');
-    let buttons = document.querySelectorAll('.btn');
-    let clear = document.querySelector('.btn-clear');
-    let equal = document.querySelector('.btn-equal');
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
 
-    // code for display input...
-
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function (e) {
-            let value = e.target.dataset.num;
-            screen.value += value;
-        })
-    });
-
-    // Code for Display output...
-
-    equal.addEventListener('click', function (e) {
-        if (screen.value === '') {
-            screen.value = "";
-        } else {
-            answer = eval(screen.value);
-            screen.value = answer;
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
         }
     })
-
-
-    // Code for clear the display...
-
-    clear.addEventListener('click', function (e) {
-        screen.value = "";
-    })
-
-})();
+})
