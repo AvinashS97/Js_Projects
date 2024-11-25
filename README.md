@@ -18,4 +18,5 @@ For any questions or inquiries, please reach out to:
 [Avinash Kumar](https://www.linkedin.com/in/avinash-kumar-481a7b201/)
 
 Project Link: [GitHub Repository](https://github.com/AvinashS97/Js_Projects) 
+
 Happy Coding...👍
