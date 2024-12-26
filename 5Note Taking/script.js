@@ -8,14 +8,25 @@ const saveNotes = () => {
     // console.log(notes);
     const data = [];
     notes.forEach((note) => {
-        data.push(note.value)
+        data.push(note.value);
     })
-    // console.log(data)
+    // console.log(data);
     if (data.length == 0) {
-        localStorage.removeItem("notes")
+        localStorage.removeItem("notes");
     } else {
         localStorage.setItem("notes", JSON.stringify(data));
     }
+
+     // Show the popup
+     const popup = document.getElementById("popup");
+     popup.style.display = "block";
+ 
+     // Hide the popup after 2 seconds
+     setTimeout(() => {
+         popup.style.display = "none";
+     }, 2000);
+
+
 }
 
 // addNote function
@@ -78,10 +89,3 @@ const addNote = (text = "") => {
 addBtn.addEventListener("click", function () {
     addNote();
 })
-
-
-
-// 22:56
-
-
-

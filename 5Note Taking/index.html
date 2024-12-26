@@ -10,22 +10,25 @@
 
 <body>
     <button id="addBtn">
-        <i class="fas fa-plus"></i>
+        <i class="fa-plus fas"></i>
         Add Note
     </button>
     <div id="main">
-
         <!-- This code will be append by JS Dynamically -->
 
         <!-- <div class="note">
            <div class="tool">
-               <i class="fas fa-save"></i>
-               <i class="fas fa-trash"></i>
+               <i class="fa-save fas"></i>
+               <i class="fa-trash fas"></i>
            </div> 
            <textarea></textarea> 
         </div> -->
     </div>
-
+    
+    <div id="popup" style="display:none; position:fixed; top:10px; right:90%; background-color:#4caf50; color:white; padding:10px; border-radius:5px; z-index:1000;">
+        Note saved!
+    </div>
+    
     <script src="https://kit.fontawesome.com/bf520e6492.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
